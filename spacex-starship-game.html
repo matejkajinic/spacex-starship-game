@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SpaceX Starship Descent through Asteroid Field - An interactive HTML5 game">
     <title>SpaceX Starship Descent through Asteroid Field</title>
     <style>
         body {
@@ -31,6 +32,7 @@
     <canvas id="gameCanvas" width="700" height="600"></canvas>
     <div id="gameInfo"></div>
     <script>
+        // Game code starts here
         const canvas = document.getElementById('gameCanvas');
         const ctx = canvas.getContext('2d');
         const gameInfo = document.getElementById('gameInfo');
@@ -138,7 +140,7 @@
             ctx.fillStyle = '#000';
             ctx.font = '14px Arial';
             ctx.textAlign = 'center';
-            ctx.fillText('SpaceX', 0, ship.width / 2 - 5); // Changed from +5 to -5
+            ctx.fillText('SpaceX', 0, ship.width / 2 - 5);
             ctx.restore();
 
             // Thrust
